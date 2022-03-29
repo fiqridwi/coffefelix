@@ -263,11 +263,10 @@ section.fact {
 
 /* Footer Start  */
 section.footer {
-  width: 80%;
+  width: 100%;
   display: flex;
   position: relative;
   background-color: #a89c8b;
-  margin: 1rem auto 0rem;
   flex-direction: column;
   padding: 50px 0;
 }
@@ -430,6 +429,31 @@ section.footer {
 @media (max-width: 575.98px) {
   .menu-main {
     flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .hero-text {
+    width: 80%;
+  }
+  section.fact {
+    margin: 3rem 2rem;
+  }
+  .footer-text-container {
+    flex-direction: column;
+    margin: 1rem 0 1rem 2rem;
+    align-items: baseline;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
+  }
+  .footer-ill img {
+    width: 50px;
+  }
+
+  .footer-line div {
+    width: 100px;
+    height: 3px;
+    background-color: white;
   }
 }
 
