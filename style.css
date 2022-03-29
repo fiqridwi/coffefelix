@@ -292,10 +292,9 @@ section.footer {
   color: white;
 }
 .footer-text-container h4 {
-  text-decoration: underline;
   font-size: 20px;
 }
-.footer-contacs {
+.footer-contacts {
   margin: 0 2rem;
 }
 .ig-container {
