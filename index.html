@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css" />
     
-    <link rel="icon" type="image/png" href="/asset/icon/ms-icon-70x70.png"/>
+    <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    
     <title>Felix Coffee</title>
@@ -221,6 +221,18 @@
       AOS.init( 
         {duration: 1600,}
       );
+      const burgerAnimation = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+  });
+};
+
+burgerAnimation();
+
     </script>
   </body>
 </html>
